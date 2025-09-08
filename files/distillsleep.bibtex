@@ -1,0 +1,16 @@
+@article{10.1093/sleep/zsaf240,
+    author = {Park, Keondo and Hong, Joopyo and Lee, Wooseok and Shin, Hyun-Woo and Kim, Hyung-Sin},
+    title = {DistillSleep: Real-Time, On-Device, Interpretable Sleep Staging from Single-Channel EEG},
+    journal = {Sleep},
+    pages = {zsaf240},
+    year = {2025},
+    month = {08},
+    abstract = {Polysomnography (PSG) is the current gold standard for sleep staging but requires laboratory equipment, multiple sensors, and labor-intensive manual scoring. We developed DistillSleep, a single-channel electroencephalogram (EEG) framework that delivers accurate, real-time, and interpretable sleep staging on resource-constrained devices.DistillSleep consists of (1) a high-capacity teacher model and (2) a 109 k-parameter student model designed for edge deployment. Both incorporate a Multi-Wavelength Pyramid module and Transformer-based architecture to capture intra- and inter-epoch features. Feature- and prediction-level knowledge distillation transfers the teacher’s expertise to the student. Training and evaluation used \&gt;10 000 overnight recordings from six cohorts (SHHS1, PhysioNet 2018, DCSM, KISS, SleepEDF-78, ISRUC), following AASM guidelines. Performance was assessed with Macro-F1.The teacher achieved state-of-the-art Macro-F1 scores (SHHS1 81.1\%, PhysioNet 78.9\%, DCSM 81.2\%, KISS 80.0\%) and provided frequency-resolved saliency maps, inter-epoch context and well-calibrated confidence (ECE 0.07). The student maintained competitive accuracy (up to 79.7\% Macro-F1) while executing \&lt;10 ms per 30-second epoch on three embedded platforms (Raspberry Pi 4B, Jetson orin nano, Coral dev board), reducing computational load 115-fold versus the best prior method (SleePyCo). Interpretability was transferred intact to the student, offering clinicians frequency-band importance and inter-epoch context visualizations, and calibration was further improved by 2.7\$\\times\$.DistillSleep combines expert-level accuracy, millisecond-scale latency, and transparent decision logic in a single-channel EEG form factor. These capabilities pave the way for point-of-care diagnostics, same-night therapy titration, and large-scale home monitoring, expanding the reach of sleep medicine while retaining clinical trust.},
+    issn = {0161-8105},
+    doi = {10.1093/sleep/zsaf240},
+    url = {https://doi.org/10.1093/sleep/zsaf240},
+    eprint = {https://academic.oup.com/sleep/advance-article-pdf/doi/10.1093/sleep/zsaf240/64107418/zsaf240.pdf},
+}
+
+
+
