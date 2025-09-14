@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About me"
+title: "About me (박건도)"
 author_profile: true
 redirect_from: 
   - /about/
@@ -15,16 +15,18 @@ Before I enter the graduate school I worked as an actuary in Milliman for seven 
 News
 ======
 
-| **2025-08-29** &nbsp;| I took the **2nd place** in [Samsung Research AI Challenge](https://dacon.io/competitions/official/236500/overview/description) (Topic: Multimodal AI models that can understand users' daily photos.). |
-|**2025-08-22** &nbsp;|[***DistillSleep***](https://academic.oup.com/sleep/advance-article-abstract/doi/10.1093/sleep/zsaf240/8239690?redirectedFrom=fulltext) is published at SLEEP.|
-|**2025-08-08** &nbsp;| My paper (***DistillSleep***) has won the **Best Paper Award** from Korean Artificial Intelligence Association (KAIA).|
-|**2024-02-27** &nbsp;| [***ImageNet-ES***](https://openaccess.thecvf.com/content/CVPR2024/papers/Baek_Unexplored_Faces_of_Robustness_and_Out-of-Distribution_Covariate_Shifts_in_Environment_CVPR_2024_paper.pdf) has been accepted for CVPR.|
-|**2023-11-08** &nbsp;| My team (Keondo and Eunsu) took the **1st place** in [Samsung AI/CE Challenge](https://news.samsung.com/global/samsung-electronics-opens-samsung-ai-forum-2023-showcasing-key-advancements-in-ai-and-computer-engineering) (Topic: Camera-Invariant Domain Adaptation)|
-|**2023-05-09** &nbsp;| [***PointSplit***](https://arxiv.org/abs/2504.03654) has been accepted at ISPN|
-|**2022-11-17** &nbsp;| My paper has won the **Best paper award** from Korean Society of Sleep Medicine (KSSM)|
-|**2022-08-08** &nbsp;| My paper [***ProtoFSSL***](https://arxiv.org/abs/2205.13921) has won the **Best Paper Award** from Korean Artificial Intelligence Association (KAIA).|
-|**2022-03-02** &nbsp;| I started my Ph.D course.|
-|**2020-03-02** &nbsp;| I started my journey at the Graduate School of Data Science.|
+| **Aug-2025** &nbsp;| I took the **2nd place** in [Samsung Research AI Challenge](https://dacon.io/competitions/official/236500/overview/description) (Topic: Multimodal AI models that can understand users' daily photos.). |
+|**Aug-2025** &nbsp;|[***DistillSleep***](https://academic.oup.com/sleep/advance-article-abstract/doi/10.1093/sleep/zsaf240/8239690?redirectedFrom=fulltext) is published at SLEEP.|
+|**Aug-2025** &nbsp;| My paper (***DistillSleep***) has won the **Best Paper Award** from Korean Artificial Intelligence Association (KAIA).|
+|**Feb-2024** &nbsp;| [***ImageNet-ES***](https://openaccess.thecvf.com/content/CVPR2024/papers/Baek_Unexplored_Faces_of_Robustness_and_Out-of-Distribution_Covariate_Shifts_in_Environment_CVPR_2024_paper.pdf) has been accepted for CVPR.|
+|**Nov-2023** &nbsp;| My team (Keondo and Eunsu) took the **1st place** in [Samsung AI/CE Challenge](https://news.samsung.com/global/samsung-electronics-opens-samsung-ai-forum-2023-showcasing-key-advancements-in-ai-and-computer-engineering) (Topic: Camera-Invariant Domain Adaptation)|
+|**May-2023** &nbsp;| [***PointSplit***](https://arxiv.org/abs/2504.03654) has been accepted at ISPN|
+|**Nov-2022** &nbsp;| My paper has won the **Best paper award** from Korean Society of Sleep Medicine (KSSM)|
+|**Aug-2022** &nbsp;| My paper [***ProtoFSSL***](https://arxiv.org/abs/2205.13921) has won the **Best Paper Award** from Korean Artificial Intelligence Association (KAIA).|
+|**Mar-2022** &nbsp;| I started my Ph.D course.|
+|**Mar-2021** &nbsp;| I took the **1st place** in [InnoJam](https://gsds.snu.ac.kr/%ec%a0%9c1%ed%9a%8c-snu-gsds-innojam%ea%b0%9c%ec%b5%9c/) from our graduate school.|
+|**Jun-2020** &nbsp;| Our project on On-device Mask Detection is released on [Press](https://news.nate.com/view/20200630n36881).|
+|**Mar-2020** &nbsp;| I started my journey at the Graduate School of Data Science.|
 
 Visitors
 ======
