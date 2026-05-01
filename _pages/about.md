@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a Ph.D student at Graduate School of Data Science in Seoul National University, South Korea. I am currently a member of AIoT lab led by professor Hyungsin Kim. 
+I am currently a Ph.D student at Graduate School of Data Science in Seoul National University, South Korea. I am currently a member of AIoT lab led by professor Hyung-Sin Kim. 
 My primary research interest lies in **Sleep AI, Lightweight AI models and optimization for on-device inference** - for example, Quantization, Knowledge distillation for sleep related applications or process optimization for heteregeneous processors (CPU-NPU or CPU-GPU-NPU etc.).
 Recently, I am particularly interested in building **a Foundation Model for sleep analysis / diagnosis / treatment to democratize polysomnography (PSG)**, which necessitates high cost and long time for patients.
 Before I enter the graduate school I worked as an actuary in Milliman for seven years and experienced diverse topics ranging actuarial science, corporate IT systems and finance.
@@ -15,6 +15,7 @@ Before I enter the graduate school I worked as an actuary in Milliman for seven 
 News
 ======
 
+|**May-2026** &nbsp;|[***SleepMaMi***](https://arxiv.org/abs/2602.07628) is accepted at ICML.|
 |**Jan-2026** &nbsp;|[***T1***](https://openreview.net/forum?id=IAnIlFsPEW) is accepted at ICLR.|
 |**Sep-2025** &nbsp;|[***Position paper on Adaptive Sensing***](https://neurips.cc/virtual/2025/loc/san-diego/poster/121916) is accepted at NeurIPS.|
 | **Aug-2025** &nbsp;| I took the **2nd place** in [Samsung Research AI Challenge](https://dacon.io/competitions/official/236500/overview/description) (Topic: Multimodal AI models that can understand users' daily photos.). |
