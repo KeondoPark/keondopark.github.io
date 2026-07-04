@@ -7,6 +7,8 @@ excerpt: 'SleepMaMi is a novel Sleep Foundation Model integrating sleep micro-st
 date: 2026-04-30
 venue: 'ICML'
 paperurl: 'https://arxiv.org/abs/2602.07628'
+githuburl: 'https://github.com/keondopark/SleepMaMi'
+youtubeurl: 'https://youtu.be/l6FN_lpRQ6w?si=We8QsjyTpWdH7YHh'
 citation: 'Park, K., Na, Y., Choi, Y., Ryu, H., Shin, H.w., Kim. H.S., 2026., SleepMaMi: A Universal Sleep Foundation Model for Integrating Macro- and Micro-structures., Forty-third International Conference on Machine Learning.'
 ---
 

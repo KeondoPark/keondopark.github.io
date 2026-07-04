@@ -8,6 +8,7 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
+
   - title: "Publications"
     url: /publications/
 
@@ -25,7 +26,10 @@ main:
     
   - title: "CV"
     url: 'http://keondopark.github.io/files/CV_KeondoPark_Eng_260508.pdf'
-    
+
+  - title: "Projects"
+    url: /projects/
+
   # - title: "CV"
   #   url: /cv-json/
     

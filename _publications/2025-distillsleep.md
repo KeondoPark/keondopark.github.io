@@ -9,6 +9,7 @@ venue: 'SLEEP'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'http://keondopark.github.io/files/DistillSleep_submitted_sleep.pdf'
 bibtexurl: 'http://keondopark.github.io/files/distillsleep.bibtex'
+githuburl: 'https://github.com/keondopark/distillsleep'
 citation: 'Park, K., Hong, J., Lee, W., Shin, H.W. and Kim, H.S., 2025. DistillSleep: Real-Time, On-Device, Interpretable Sleep Staging from Single-Channel EEG. SLEEPJ, p.zsaf240.'
 videofile: 'http://keondopark.github.io/files/Unlocking_Sleep__How_DistillSleep_s_AI_Revolutionizes_Diagnosti.mp4'
 ---

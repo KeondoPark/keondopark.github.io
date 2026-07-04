@@ -9,6 +9,7 @@ venue: 'International Conference on Information Processing in Sensor Networks'
 slidesurl: 'http://keondopark.github.io/files/PointSplit_vf.pdf'
 paperurl: 'http://keondopark.github.io/files/PointSplit_ACM_Published.pdf'
 youtubeurl: 'https://youtu.be/1YzFycz_75I?si=R5cQphcyayxVGiIH'
+githuburl: 'https://github.com/KeondoPark/votenet_tf'
 citation: 'Park, K., Choi, Y.R., Lee, I. and Kim, H.S., 2023, May. PointSplit: Towards on-device 3D object detection with heterogeneous low-power accelerators. In Proceedings of the 22nd International Conference on Information Processing in Sensor Networks (pp. 67-81).'
 ---
 

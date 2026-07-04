@@ -11,25 +11,81 @@ author_profile: true
 
 {% include base_path %}
 
+<style>
+  .publications-list {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .publications-list .list__item {
+    margin: 0;
+  }
+
+  .publications-list .archive__item {
+    padding: 1.25rem 1.4rem;
+    border: 1px solid rgba(15, 23, 42, 0.10);
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+  }
+
+  .publications-list .archive__item + .archive__item {
+    margin-top: 0;
+  }
+
+  .publications-list .archive__item-title {
+    margin-top: 0;
+  }
+
+  .publications-list .archive__item-excerpt,
+  .publications-list .page__date,
+  .publications-list p {
+    margin-bottom: 0.35rem;
+  }
+
+  .publications-list .archive__item:not(:last-child) {
+    position: relative;
+  }
+
+  .publications-list .archive__item:not(:last-child)::after {
+    content: '';
+    display: block;
+    height: 1px;
+    margin-top: 1rem;
+    background: linear-gradient(90deg, rgba(15, 23, 42, 0.08), rgba(15, 23, 42, 0.16), rgba(15, 23, 42, 0.08));
+  }
+
+  @media (max-width: 640px) {
+    .publications-list .archive__item {
+      padding: 1rem;
+      border-radius: 16px;
+    }
+  }
+</style>
+
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
+  <div class="publications-list">
+    {% for category in site.publication_category  %}
+      {% assign title_shown = false %}
+      {% for post in site.publications reversed %}
+        {% if post.category != category[0] %}
+          {% continue %}
+        {% endif %}
+        {% unless title_shown %}
+          <h2>{{ category[1].title }}</h2><hr />
+          {% assign title_shown = true %}
+        {% endunless %}
+        {% include archive-single.html %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+{% else %}
+  <div class="publications-list">
     {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
       {% include archive-single.html %}
     {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+  </div>
 {% endif %}
 
 
