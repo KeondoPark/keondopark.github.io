@@ -371,7 +371,7 @@ author_profile: true
         alt: 'SleepMaMi project thumbnail',
         points: [
           'Multimodal foundation model that integrates sleep macro- and micro-structures',          
-          'Pretrained in self-supervised manner, on a large-scale dataset (20,942 PSG cases)',
+          'Pretrained in a self-supervised manner on a large-scale dataset (20,942 PSG cases)',
           'Introduced a novel pretraining strategy: Demographic-Guided Contrastive Learning'
         ],
         gallery: [
@@ -379,19 +379,19 @@ author_profile: true
             image: '{{ base_path }}/images/projects/SleepMaMi/SleepMaMi_MicroEncoder.png',
             alt: 'SleepMaMi Micro-Encoder',
             title: 'SleepMaMi Micro-Encoder',
-            text: 'The Micro-Encoder learns the fine-grained features of each modalities and common features across modalities. For this, it consists of Private-Shared encoders. It is pretrained via the combination of Masked AutoEncoder and Constrastive Learning.'
+            text: 'The Micro-Encoder learns the fine-grained features of each modality as well as the common features across modalities. To this end, it consists of private-shared encoders. It is pretrained via a combination of Masked Autoencoding and Contrastive Learning.'
           },
           {
             image: '{{ base_path }}/images/projects/SleepMaMi/SleepMaMi_MacroEncoder.png',
             alt: 'SleepMaMi Macro-Encoder',
             title: 'SleepMaMi Macro-Encoder',
-            text: 'The Macro-Encoder captures the dynamic pattenrs of overnight sleep across hour-long horizon. It is based on Mamba architecture to process the long sequence efficiently. Mamba is run in bidirectional manner to learn sleep patterns from the sleep onset and from the sleep termination.'
+            text: 'The Macro-Encoder captures the dynamic patterns of overnight sleep across an hour-long horizon. It is based on the Mamba architecture to process long sequences efficiently. Mamba is run in a bidirectional manner to learn sleep patterns from both sleep onset and sleep termination.'
           },
           {
             image: '{{ base_path }}/images/projects/SleepMaMi/SleepMaMi_DGCL_formula.png',
-            alt: 'SleepMaMi DGCL fomula',
-            title: 'SleepMaMi DGCL fomula',
-            text: 'DGCL is a generalized version of the standard constrastive learning. Instead of "Positive" or "Negative" labels, Weigthed Similarity is used as labels. The Weighted Similarity is calculated from the demographic distance of each subject pair (Age, BMI, Sex).'
+            alt: 'SleepMaMi DGCL formula',
+            title: 'SleepMaMi DGCL formula',
+            text: 'DGCL is a generalized version of standard contrastive learning. Instead of "Positive" or "Negative" labels, a Weighted Similarity is used as the label. The Weighted Similarity is calculated from the demographic distance of each subject pair (Age, BMI, Sex).'
           }
         ],
         links: [
@@ -402,60 +402,90 @@ author_profile: true
       samsung2025: {
         year: '2025',
         title: 'Samsung Collegiate Programming Challenge ',
-        summary: 'I took the second place in Samsung AI/CE Challenge',
+        summary: 'I took second place in the Samsung AI/CE Challenge',
         image: '{{ base_path }}/images/projects/Samsung2025/Samsung2025_thumbnail.jpg',
         alt: 'Samsung 2025',
         points: [
-          'Topic: Multimodal AI to understand daily life photos',
-          'Combination of multiple techniques (pruning, targeted pretraining, LoRA finetuning, promt engineeering) led to small but powerful VLM.',
+          'Topic: Lightweight multimodal AI to understand everyday photos',
+          'A combination of multiple techniques (pruning, targeted finetuning, LoRA finetuning, prompt engineering) led to a small but powerful VLM.',
         ],
         gallery: [
             {
             image: '{{ base_path }}/images/projects/Samsung2025/Samsung2025_problem.png',
             alt: 'Samsung2025 Problem',
             title: 'Challenge Problem',
-            text: "Participants develop an AI model that selects the correct answer when given multiple-choice questions about various everyday photos stored in a user's smartphone gallery. Input: Photo and Multiple-choice question / Output: Correct answer number"
+            text: "Participants develop a lightweight AI model that selects the correct answer to multiple-choice questions about various everyday photos stored in a user's smartphone gallery. The number of parameters should not exceed 3 billion."
           },
           {
             image: '{{ base_path }}/images/projects/Samsung2025/Baseline_MobileVLM.png',
             alt: 'MobileVLM',
             title: 'Baseline - MobileVLM',
-            text: 'A lightweight pretrained Vision-Language Model is selected as the base model for finetuning.'
+            text: 'A lightweight pretrained Vision-Language Model is selected as the base model for finetuning: MobileVLM (EMNLP 2024) is a lightweight VLM based on a combination of CLIP and MobileLLaMA. Depthwise convolution is used for computationally efficient vision-language projection.'
           },
           {
-            image: '{{ base_path }}/images/projects/Samsung2023/background-extraction-1400.webp',
-            alt: 'Background extraction',
-            title: 'Background fusion',
-            text: 'FisyEye images include some background parts. To make the source images look more similar to FishEye images, we extracted the background parts from the FishEye images and fused this with barrel-distorted source images.'
+            image: '{{ base_path }}/images/projects/Samsung2025/Pruning.png',
+            alt: 'Pruning',
+            title: 'Pruning',
+            text: 'Pretrained MobileVLM has a slightly greater number of parameters (3.03B) than the model specification (3B) required by the Challenge. To make it eligible, LLM-Pruner (NeurIPS 2023) is utilized to reduce the resulting model to fewer than 3B parameters.'
           },
           
           {
-            image: '{{ base_path }}/images/projects/Samsung2023/ensemble-1400.webp',
-            alt: 'Pseudo-labels generation',
-            title: 'Pseudo-labels generation for target iamges using ensemble',
-            text: 'We used ensemble to produce the pseudo-labels for target-images. This pseudo-labels are used to fine-tune the model with target iamges.'
+            image: '{{ base_path }}/images/projects/Samsung2025/Finetuning_Datasets.png',
+            alt: 'Finetuning datasets',
+            title: 'Targeted finetuning',
+            text: 'The released MobileVLM checkpoint is pretrained on the LLaVA-1.5 dataset - this dataset is relatively small (665K instruction-tuning examples) and known to be messy. The model is finetuned on a large-scale, high-quality dataset to refine it (instruction-tuning data from LLaVA-Next (760K) and LLaVA-OneVision (3.6M)).'
           },
           {
-            image: '{{ base_path }}/images/projects/Samsung2023/result-1400.webp',
+            image: '{{ base_path }}/images/projects/Samsung2025/lora_finetuning.png',
+            alt: 'LoRA',
+            title: 'LoRA finetuning and Prompt engineering',
+            text: 'The model is finetuned with LoRA using the challenge data. LoRA is used to prevent overfitting to the challenge data, given the small size of the dataset. The prompt is refined to obtain the best results.'
+          },
+          {
+            image: '{{ base_path }}/images/projects/Samsung2025/Results.png',
             alt: 'Results',
             title: 'Results',
-            text: 'Our model outperformed all other competitors and is ranked at **1st place**! (Public score: mIoU 0.67502 , Private score: mIoU 0.67711)'
+            text: 'With everything combined, the final model achieved good accuracy while keeping its size sufficiently small.'
           }
         ],
         links: [
           { label: 'Slides', href: 'https://dacon.io/en/competitions/official/236500/codeshare/12688?page=1&dtype=recent' }
         ]
       },
+      eegband: {
+        year: '2023',
+        title: 'On-device Real-time Sleep Stage Classification with Single Channel EEG on Coral',
+        summary: 'Class project for EEG-band based on-device sleep staging system',
+        image: '{{ base_path }}/images/projects/EEG_band/EEG_band_thumbnail.png',
+        alt: 'EEG_band',
+        points: [
+          'We developed an AI model that can classify sleep stages from EEG-band inputs',
+          'The model is extremely small to be run on Coral board in less than 10ms.',
+          'Smart watch results (Apple and Galaxy watch) are obtained and compared'
+        ],
+        gallery: [
+            {
+            image: '{{ base_path }}/images/projects/EEG_band/EEG_band_thumbnail.png',
+            alt: 'EEG band',
+            title: 'EEG band',
+            text: 'To be completed'
+          },
+          
+        ],
+        links: [
+          { label: 'YouTube', href: 'https://youtu.be/gDrmccp6O6g?si=9cqQed00Ht04FIDb' }
+        ]
+      },
       samsung2023: {
         year: '2023',
         title: 'Samsung AI/CE Challenge ',
-        summary: 'My team (Keondo/Eunsu) took the first place in Samsung AI/CE Challenge',
+        summary: 'My team (Keondo/Eunsu) took first place in the Samsung AI/CE Challenge',
         image: '{{ base_path }}/images/projects/Samsung2023/Samsung2023_thumbnail.jpeg',
         alt: 'Samsung 2023',
         points: [
           'Topic: Camera-Invariant Domain Adaptation',
-          'We finetuned ViT-Adapter with augmentation trainig data adapted for fish-eye camera.',
-          'Our model was ranked as the first on both public and private scores.'
+          'We finetuned ViT-Adapter with augmented training data adapted for the fish-eye camera.',
+          'Our model ranked first on both the public and private scores.'
         ],
         gallery: [
             {
@@ -467,27 +497,27 @@ author_profile: true
           {
             image: '{{ base_path }}/images/projects/Samsung2023/barrel-distortion-1400.webp',
             alt: 'Barrel Distortion',
-            title: 'Source image adpatation to the target domain',
-            text: 'To project the source domain (RectLinear) to the target domain (FishEye), we distorted the source image using Barrel distortion. The resulting images imitate the characteristics of FishEye image. After distortion, we cropped out the invalide parts outside the image area.'
+            title: 'Source image adaptation to the target domain',
+            text: 'To project the source domain (Rectilinear) onto the target domain (FishEye), we distorted the source image using barrel distortion. The resulting images imitate the characteristics of a FishEye image. After distortion, we cropped out the invalid parts outside the image area.'
           },
           {
             image: '{{ base_path }}/images/projects/Samsung2023/background-extraction-1400.webp',
             alt: 'Background extraction',
             title: 'Background fusion',
-            text: 'FisyEye images include some background parts. To make the source images look more similar to FishEye images, we extracted the background parts from the FishEye images and fused this with barrel-distorted source images.'
+            text: 'FishEye images include some background regions. To make the source images look more similar to FishEye images, we extracted the background regions from the FishEye images and fused them with the barrel-distorted source images.'
           },
           
           {
             image: '{{ base_path }}/images/projects/Samsung2023/ensemble-1400.webp',
             alt: 'Pseudo-labels generation',
-            title: 'Pseudo-labels generation for target iamges using ensemble',
-            text: 'We used ensemble to produce the pseudo-labels for target-images. This pseudo-labels are used to fine-tune the model with target iamges.'
+            title: 'Pseudo-label generation for target images using an ensemble',
+            text: 'We used an ensemble to produce the pseudo-labels for the target images. These pseudo-labels are used to fine-tune the model on the target images.'
           },
           {
             image: '{{ base_path }}/images/projects/Samsung2023/result-1400.webp',
             alt: 'Results',
             title: 'Results',
-            text: 'Our model outperformed all other competitors and is ranked at **1st place**! (Public score: mIoU 0.67502 , Private score: mIoU 0.67711)'
+            text: 'Our model outperformed all other competitors and ranked in **1st place**! (Public score: mIoU 0.67502, Private score: mIoU 0.67711)'
           }
         ],
         links: [

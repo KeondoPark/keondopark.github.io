@@ -7,10 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a Ph.D student at Graduate School of Data Science in Seoul National University, South Korea. I am currently a member of AIoT lab led by professor Hyung-Sin Kim. 
-My primary research interest lies in **Sleep AI, Lightweight AI models and optimization for on-device inference** - for example, Quantization, Knowledge distillation for sleep related applications or process optimization for heteregeneous processors (CPU-NPU or CPU-GPU-NPU etc.).
-Recently, I am particularly interested in building **a Foundation Model for sleep analysis / diagnosis / treatment to democratize polysomnography (PSG)**, which necessitates high cost and long time for patients.
-Before I enter the graduate school I worked as an actuary in Milliman for seven years and experienced diverse topics ranging actuarial science, corporate IT systems and finance.
+I am a Ph.D. student at the Graduate School of Data Science, Seoul National University, South Korea, and a member of the AIoT lab led by Professor Hyung-Sin Kim.
+My primary research interest lies in **efficient multimodal medical AI systems for healthcare and real-world deployment**. Recent work has focused on foundation models, time-series representation learning, and on-device AI. Lately, I am particularly interested in building **agentic AI for sleep analysis, diagnosis, and treatment to better understand polysomnography (PSG)**, a task that currently demands intensive labor and time from clinicians. I also enjoy solving real-world domain problems and have achieved strong results in many competitions — including 1st and 2nd place finishes at the Samsung AI Challenge and 2nd place at the NAVER AI Competition.
+Before graduate school, I worked as an actuary at Milliman for seven years, gaining experience across diverse areas ranging from actuarial science to corporate IT systems and finance.
 
 News
 ======
