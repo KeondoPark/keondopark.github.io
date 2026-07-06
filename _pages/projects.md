@@ -399,6 +399,53 @@ author_profile: true
           { label: 'Code', href: 'https://github.com/keondopark/SleepMaMi' }
         ]
       },
+      samsung2025: {
+        year: '2025',
+        title: 'Samsung Collegiate Programming Challenge ',
+        summary: 'I took the second place in Samsung AI/CE Challenge',
+        image: '{{ base_path }}/images/projects/Samsung2025/Samsung2025_thumbnail.jpg',
+        alt: 'Samsung 2025',
+        points: [
+          'Topic: Multimodal AI to understand daily life photos',
+          'Combination of multiple techniques (pruning, targeted pretraining, LoRA finetuning, promt engineeering) led to small but powerful VLM.',
+        ],
+        gallery: [
+            {
+            image: '{{ base_path }}/images/projects/Samsung2025/Samsung2025_problem.png',
+            alt: 'Samsung2025 Problem',
+            title: 'Challenge Problem',
+            text: "Participants develop an AI model that selects the correct answer when given multiple-choice questions about various everyday photos stored in a user's smartphone gallery. Input: Photo and Multiple-choice question / Output: Correct answer number"
+          },
+          {
+            image: '{{ base_path }}/images/projects/Samsung2023/barrel-distortion-1400.webp',
+            alt: 'Barrel Distortion',
+            title: 'Source image adpatation to the target domain',
+            text: 'To project the source domain (RectLinear) to the target domain (FishEye), we distorted the source image using Barrel distortion. The resulting images imitate the characteristics of FishEye image. After distortion, we cropped out the invalide parts outside the image area.'
+          },
+          {
+            image: '{{ base_path }}/images/projects/Samsung2023/background-extraction-1400.webp',
+            alt: 'Background extraction',
+            title: 'Background fusion',
+            text: 'FisyEye images include some background parts. To make the source images look more similar to FishEye images, we extracted the background parts from the FishEye images and fused this with barrel-distorted source images.'
+          },
+          
+          {
+            image: '{{ base_path }}/images/projects/Samsung2023/ensemble-1400.webp',
+            alt: 'Pseudo-labels generation',
+            title: 'Pseudo-labels generation for target iamges using ensemble',
+            text: 'We used ensemble to produce the pseudo-labels for target-images. This pseudo-labels are used to fine-tune the model with target iamges.'
+          },
+          {
+            image: '{{ base_path }}/images/projects/Samsung2023/result-1400.webp',
+            alt: 'Results',
+            title: 'Results',
+            text: 'Our model outperformed all other competitors and is ranked at **1st place**! (Public score: mIoU 0.67502 , Private score: mIoU 0.67711)'
+          }
+        ],
+        links: [
+          { label: 'Slides', href: 'https://dacon.io/en/competitions/official/236500/codeshare/12688?page=1&dtype=recent' }
+        ]
+      },
       samsung2023: {
         year: '2023',
         title: 'Samsung AI/CE Challenge ',
