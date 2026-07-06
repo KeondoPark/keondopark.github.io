@@ -417,10 +417,10 @@ author_profile: true
             text: "Participants develop an AI model that selects the correct answer when given multiple-choice questions about various everyday photos stored in a user's smartphone gallery. Input: Photo and Multiple-choice question / Output: Correct answer number"
           },
           {
-            image: '{{ base_path }}/images/projects/Samsung2023/barrel-distortion-1400.webp',
-            alt: 'Barrel Distortion',
-            title: 'Source image adpatation to the target domain',
-            text: 'To project the source domain (RectLinear) to the target domain (FishEye), we distorted the source image using Barrel distortion. The resulting images imitate the characteristics of FishEye image. After distortion, we cropped out the invalide parts outside the image area.'
+            image: '{{ base_path }}/images/projects/Samsung2025/Baseline_MobileVLM.png',
+            alt: 'MobileVLM',
+            title: 'Baseline - MobileVLM',
+            text: 'A lightweight pretrained Vision-Language Model is selected as the base model for finetuning.'
           },
           {
             image: '{{ base_path }}/images/projects/Samsung2023/background-extraction-1400.webp',
@@ -494,6 +494,7 @@ author_profile: true
           { label: 'Slides and Codes', href: 'https://dacon.io/en/competitions/official/236132/codeshare/9175?page=1&dtype=recent' }
         ]
       }
+    /*
     //   distsleep: {
     //     year: '2025',
     //     title: 'DistillSleep',
@@ -622,6 +623,7 @@ author_profile: true
     //       { label: 'Paper', href: '{{ base_path }}/files/MaskDetection_EdgeTPU.pdf' }
     //     ]
     //   }
+    */
     };
 
     function clearChildren(node) {
