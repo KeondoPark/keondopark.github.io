@@ -455,7 +455,7 @@ author_profile: true
       eegband: {
         year: '2023',
         title: 'On-device Real-time Sleep Stage Classification with Single Channel EEG on Coral',
-        summary: 'Class project for EEG-band based on-device sleep staging system',
+        summary: 'Class project (Ambient AI) for EEG-band based on-device sleep staging system',
         image: '{{ base_path }}/images/projects/EEG_band/EEG_band_thumbnail.png',
         alt: 'EEG_band',
         points: [
@@ -465,10 +465,34 @@ author_profile: true
         ],
         gallery: [
             {
-            image: '{{ base_path }}/images/projects/EEG_band/EEG_band_thumbnail.png',
-            alt: 'EEG band',
-            title: 'EEG band',
-            text: 'To be completed'
+            image: '{{ base_path }}/images/projects/EEG_band/EEG_band_overview.png',
+            alt: 'Overview',
+            title: 'Overview',
+            text: 'We collected our own data using portable EEG band and adapted the pretrained sleep staging model to the acquired data. The model is deployed to Coral dev board and tested.'
+          },
+          {
+            image: '{{ base_path }}/images/projects/EEG_band/EEG_band_data_collection.png',
+            alt: 'EEG data collection',
+            title: 'EEG data collection',
+            text: "EEG data were collected from team members' nights using portable EEG-band (TGAM Brainwave EEG headband)"
+          },
+          {
+            image: '{{ base_path }}/images/projects/EEG_band/EEG_band_corl.png',
+            alt: 'Coral deploy',
+            title: 'Model deployment to Coral',
+            text: "The model is adapted, quantized to INT8 and compiled for EdgeTPU before it is deployed to Coral dev board. The model is run on EdgeTPU embedded in Coral dev board."
+          },
+          {
+            image: '{{ base_path }}/images/projects/EEG_band/EEG_band_real_time_proto.png',
+            alt: 'Real time prototype',
+            title: 'Real time sleep staging prototype',
+            text: "We developed a prototype demonstrating that on-device real-time sleep staging is feasible, using portable EEG-band and a resource-constrained device."
+          },
+          {
+            image: '{{ base_path }}/images/projects/EEG_band/EEG_band_smartwatch_comparison.png',
+            alt: 'Smartwatch comparison',
+            title: 'Comparison of sleep staging results to those from smartwatches',
+            text: "We compared our model's predictions against that from two types of smartwatches - Galaxy watch and Apple watch. "
           },
           
         ],
