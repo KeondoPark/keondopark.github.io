@@ -452,6 +452,66 @@ author_profile: true
           { label: 'Slides', href: 'https://dacon.io/en/competitions/official/236500/codeshare/12688?page=1&dtype=recent' }
         ]
       },
+      pointsplit: {
+        year: '2023',
+        title: 'PointSplit: On-device 3D object detection',
+        summary: 'On-device 3D object detection by system-algorithm optimization',
+        image: '{{ base_path }}/images/projects/PointSplit/PointSplit_thumbnail.jpg',
+        alt: 'PointSplit',
+        points: [
+          'We optimized the 3D object detection model architecture to be suitable for CPU+GPU+NPU system',
+          'The inference pipeline is then tailored for modified architecture.',
+          'Role-based group quantization is newly proposed and applied to preserve prediction power.'
+        ],
+        gallery: [
+            {
+            image: '{{ base_path }}/images/projects/PointSplit/PointSplit_TargetTask.png',
+            alt: 'Target task',
+            title: 'Target task',
+            text: '3D object detection of indoor scenes on edge devices containing heterogeneous procesors (CPU/GPU/NPU)'
+          },
+          {
+            image: '{{ base_path }}/images/projects/PointSplit/PointSplit_Challenge.png',
+            alt: 'Challenges',
+            title: 'Challenges',
+            text: "Point sampling and PointNet are alternated during inference of existing 3D object detection model (VoteNet). Allocating the jobs to GPU and NPU results in long idle time, under-utilizing the system."
+          },
+          {
+            image: '{{ base_path }}/images/projects/PointSplit/PointSplit_Pipeline.png',
+            alt: 'Pipeline',
+            title: 'Pipeline',
+            text: "By splitting the pointset into two subsets with different point sampling, the workload could be split into two and pipelined. This leads to better utilization of the processors (GPU and NPU)."
+          },
+          {
+            image: '{{ base_path }}/images/projects/PointSplit/PointSplit_BiasedFPS.png',
+            alt: 'BiasedFPS',
+            title: 'Biased Farthest Point Sampling',
+            text: "To populate non-overlapping subsets of point cloud, we introduced a new sampling algorithm - **Biased Farthest Point Sampling**. Compared to normal FPS, this results in more points sampled from the preferred subset. Two subsets could be obtained - a subset with FPS and a subset with Biased FPS."
+          },
+          {
+            image: '{{ base_path }}/images/projects/PointSplit/PointSplit_GroupQ.png',
+            alt: 'GroupQ',
+            title: 'Role-based Group Quantization',
+            text: "Layerwise quantization resulted in sharp drop in detection accuracy. On the other hand, channewise quantization incurs quantization burden. To address this, we proposed Role-based Groupwise quantization - Grouping channels by each channel's role, then quantize each group of channels collectively."
+          },
+          {
+            image: '{{ base_path }}/images/projects/PointSplit/PointSplit_HW.png',
+            alt: 'HW',
+            title: 'Implementation on Jetson Nano + EdgeTPU',
+            text: "We deployed PointSplit on Jetson Nano equipped with EdgeTPU. This hardware platform of heterogeneous accelerators helped to validate the real-world benefit of PointSplit."
+          },
+          {
+            image: '{{ base_path }}/images/projects/PointSplit/PointSplit_Latency.png',
+            alt: 'Results',
+            title: 'Results',
+            text: "Our test on experimental environment (Jetson Nano + EdgeTPU) confirms that PointSplit reduces the latency by up to 24.7 times, preserving detection accuracy."
+          },
+          
+        ],
+        links: [
+          { label: 'YouTube', href: 'https://youtu.be/gDrmccp6O6g?si=9cqQed00Ht04FIDb' }
+        ]
+      },
       eegband: {
         year: '2023',
         title: 'On-device Real-time Sleep Stage Classification with Single Channel EEG on Coral',
