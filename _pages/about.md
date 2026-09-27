@@ -8,12 +8,13 @@ redirect_from:
 ---
 
 I am a Ph.D. student at the Graduate School of Data Science, Seoul National University, South Korea, and a member of the AIoT lab led by Professor Hyung-Sin Kim.
-My primary research interest lies in **efficient multimodal medical AI systems for healthcare and real-world deployment**. Recent work has focused on foundation models, time-series representation learning, and on-device AI. Lately, I am particularly interested in building **agentic AI for sleep analysis, diagnosis, and treatment to better understand polysomnography (PSG)**, a task that currently demands intensive labor and time from clinicians. I also enjoy solving real-world domain problems and have achieved strong results in many competitions — including 1st and 2nd place finishes at the Samsung AI Challenge and 2nd place at the NAVER AI Competition.
+My primary research interest lies in **efficient multimodal medical AI systems for healthcare and real-world deployment**. Recent work has focused on foundation models, time-series representation learning, and on-device AI. Lately, I am particularly interested in **EEG estimation with peripheral signals for easier sleep monitoring** and building **agentic AI for sleep analysis, diagnosis, and treatment**, a task that currently demands intensive labor and time from clinicians. I also enjoy solving real-world domain problems and have achieved strong results in many competitions — including 1st and 2nd place finishes at the Samsung AI Challenge and 2nd place at the NAVER AI Competition.
 Before graduate school, I worked as an actuary at Milliman for seven years, gaining experience across diverse areas ranging from actuarial science to corporate IT systems and finance.
 
 News
 ======
 
+|**Sep-2026** &nbsp;|I am selected for the NRF PhD Fellowship (600 outstanding students).|
 |**May-2026** &nbsp;|[***SleepMaMi***](https://arxiv.org/abs/2602.07628) is accepted at ICML.|
 |**Jan-2026** &nbsp;|[***T1***](https://openreview.net/forum?id=IAnIlFsPEW) is accepted at ICLR.|
 |**Sep-2025** &nbsp;|[***Position paper on Adaptive Sensing***](https://neurips.cc/virtual/2025/loc/san-diego/poster/121916) is accepted at NeurIPS.|
