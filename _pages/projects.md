@@ -363,6 +363,62 @@ author_profile: true
     var backButton = document.getElementById('project-detail-back');
 
     var projects = {
+      snuaichallenge: {
+        year: '2026',
+        title: 'SNU AI Challenge',
+        summary: 'Organizing committee of SNU AI Challenge 2026.',
+        image: '{{ base_path }}/images/projects/snuaichallenge/snuaichallenge_Thumbnail.png',
+        alt: 'SNU AI Challenge thumbnail',
+        points: [
+          'Worked as a member of organizing team of SNU AI Challenge 2026',          
+          'Challenge topic: Reorder the shuffled images to be consistent with the text description.',
+          'The challenge ran for about two months and drew 360 university students.'
+        ],
+        gallery: [
+          {
+            image: '{{ base_path }}/images/projects/snuaichallenge/problem_sample.jpg',
+            alt: 'Problem',
+            title: 'Problem',
+            text: 'The objective is to develop an AI model that can reorder four shuffled images to the right order, following the textual description accompanying the images.'
+          },
+          {
+            image: '{{ base_path }}/images/projects/snuaichallenge/data_preparation.png',
+            alt: 'Dataset preparation',
+            title: 'Dataset preparation',
+            text: 'We use captioned video set as source. We extracted four screenshots from the video and provide the caption. Many pipelines are used to diversify the dataset and control the difficulty of the challenge.'
+          },
+          {
+            image: '{{ base_path }}/images/projects/snuaichallenge/data_validation.png',
+            alt: 'Dataset validation',
+            title: 'Dataset validation',
+            text: 'Each image-text pair is verified by at least three people using the platform we developed for ourselves. Each pair is considered valid if more than two people\'s responses are agreed.'
+          },
+          {
+            image: '{{ base_path }}/images/projects/snuaichallenge/data_stats.png',
+            alt: 'Dataset statistics',
+            title: 'Dataset statistics',
+            text: 'Finally, we have collected 9535 image-text pairs for training, 819 pairs for test and 3884 pairs for external test.'
+          },
+          {
+            image: '{{ base_path }}/images/projects/snuaichallenge/challenge_1st_round.png',
+            alt: '1st round',
+            title: '1st round: Kaggle online challenge',
+            text: 'The first round was done on Kaggle, competing to get the highest leaderboard score.'
+          },
+          {
+            image: '{{ base_path }}/images/projects/snuaichallenge/challenge_2nd_round.jpg',
+            alt: '2nd round',
+            title: '2nd round: Offline presentation',
+            text: 'High rankers from the first round are requested to submit 5-page reports. We reviewed them and selected 12 candidate teams to present their work in person. 7 oustatnding teams are finally selected as the winner of the challenge.'
+          },
+          
+        ],
+        links: [          
+          { label: 'Challenge page', href: 'https://snuaichallenge.github.io' }
+        ]
+      },
+
+
       sleepmami: {
         year: '2026',
         title: 'SleepMaMi (ICML 2026)',
